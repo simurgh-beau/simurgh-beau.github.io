@@ -51,9 +51,18 @@
             text-decoration: none;
             border-radius: 8px;
             transition: background-color 0.2s;
+            margin: 5px;
         }
         .button:hover {
             background-color: #0056b3;
+        }
+        .button.secondary {
+            background-color: #eef;
+            color: #333;
+            font-weight: normal;
+        }
+        .button.secondary:hover {
+            background-color: #dcdfe6;
         }
         .lang-switcher {
             text-align: center;
@@ -75,10 +84,11 @@
         }
         #persian-content {
             display: none;
-            direction: rtl; /* Right-to-left for Persian */
-            font-family: "Vazirmatn", "Tahoma", sans-serif; /* Better Persian font */
+            direction: rtl;
+            font-family: "Vazirmatn", "Tahoma", sans-serif;
         }
-        /* Add Vazirmatn font from Google Fonts for better Persian rendering */
+        ul { padding-right: 20px; }
+        li { margin-bottom: 10px; }
         @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
     </style>
 </head>
@@ -97,12 +107,22 @@
 
         <section>
             <h2>Executive Summary</h2>
-            <p>Authoritarian regimes thrive by systematically dividing their opposition and silencing the populace, creating a crisis of disconnected voices where citizens feel isolated and powerless. This paper proposes a technological solution: The Agora Protocol, a new feature integrated within the trusted and widely-used Telegram platform.</p>
-            <p>The protocol establishes a secure, anonymous, and multi-stage deliberation process where citizens can discuss and vote on pressing national issues. Through a meritocratic filtration system, the most resonant and well-reasoned ideas rise to the top, culminating in a national consensus that is transparent and visible to all participants. This tool is designed not only to bridge internal divisions but also to provide a clear, data-driven barometer of the people's true will.</p>
+            <p>This paper proposes The Agora Protocol, a new feature integrated within Telegram to solve the crisis of disconnected voices in authoritarian states. The protocol establishes a secure, anonymous, and multi-stage deliberation process where citizens can discuss and vote on pressing national issues, allowing a national consensus to emerge from a meritocratic filtration system.</p>
+        </section>
+
+        <section>
+            <h2>For Developers & Implementers</h2>
+            <p>The "A Treatise for One Network" protocol is an open framework. To ensure safety and integrity, any legitimate implementation (such as a Telegram Mini-App) must adhere to the following core principles:</p>
+            <ul>
+                <li><strong>100% Open Source:</strong> The entire source code must be publicly available for inspection and audit by the community.</li>
+                <li><strong>Public Security Audit:</strong> The application must undergo and pass a security audit from a trusted, independent third-party firm.</li>
+                <li><strong>Official Endorsement:</strong> To prevent fraudulent clones, any legitimate implementation must be officially recognized and linked to from this website.</li>
+            </ul>
         </section>
 
         <div class="button-container">
-            <a href="white paper.pdf" class="button">Download the Full White Paper (English PDF)</a>
+            <a href="white paper_v2.pdf" class="button">Download White Paper v2.0 (English PDF)</a>
+            <a href="white paper.pdf" class="button secondary">Download Original v1.0 (English PDF)</a>
         </div>
 
         <footer>
@@ -119,12 +139,22 @@
 
         <section>
             <h2>چکیده</h2>
-            <p>رژیم‌های خودکامه با تفرقه‌افکنی سیستماتیک میان مخالفان و ساکت کردن مردم، به بقای خود ادامه می‌دهند و بحران «صداهای گسسته» را ایجاد می‌کنند که در آن شهروندان احساس انزوا و ناتوانی می‌کنند. این مقاله یک راه حل فناورانه برای این مشکل ارائه می‌دهد: پروتکل آگورا، یک ویژگی جدید که با پلتفرم مورد اعتماد و پرکاربرد تلگرام یکپارچه شده است.</p>
-            <p>این پروتکل یک فرآیند گفت‌وگوی امن، ناشناس و چندمرحله‌ای را ایجاد می‌کند که در آن شهروندان می‌توانند در مورد مسائل مبرم ملی بحث و رأی‌گیری کنند. از طریق یک سیستم پالایش شایسته‌سالار، طنین‌اندازترین و منطقی‌ترین ایده‌ها به صدر می‌رسند و در نهایت به یک اجماع ملی می‌انجامند. این ابزار نه تنها برای پر کردن شکاف‌های داخلی، بلکه برای ارائه یک فشارسنج شفاف و داده‌محور از اراده واقعی مردم طراحی شده است.</p>
+            <p>این مقاله پروتکل آگورا را پیشنهاد می‌کند، یک ویژگی جدید یکپارچه با تلگرام برای حل بحران صداهای گسسته در دولت‌های خودکامه. این پروتکل یک فرآیند گفت‌وگوی امن، ناشناس و چندمرحله‌ای را ایجاد می‌کند که در آن شهروندان می‌توانند در مورد مسائل ملی بحث و رأی‌گیری کنند و به یک اجماع ملی از طریق یک سیستم پالایش شایسته‌سالار دست یابند.</p>
+        </section>
+        
+        <section>
+            <h2>برای توسعه‌دهندگان و مجریان طرح</h2>
+            <p>پروتکل «رسالۀ یک شبکه» یک چارچوب باز است. برای تضمین ایمنی و یکپارچگی، هر پیاده‌سازی مشروعی (مانند یک مینی-اپ در تلگرام) باید به اصول بنیادین زیر پایبند باشد:</p>
+            <ul>
+                <li><strong>۱۰۰٪ متن‌باز:</strong> تمام سورس کد باید برای بازبینی و حسابرسی توسط جامعه، به صورت عمومی در دسترس باشد.</li>
+                <li><strong>حسابرسی امنیتی عمومی:</strong> اپلیکیشن باید یک حسابرسی امنیتی را توسط یک شرکت شخص ثالث معتبر و مستقل با موفقیت پشت سر بگذارد.</li>
+                <li><strong>تأیید رسمی:</strong> برای جلوگیری از نسخه‌های جعلی، هر پیاده‌سازی مشروعی باید به طور رسمی توسط این وب‌سایت، به عنوان منبع اصلی پروژه، به رسمیت شناخته شود.</li>
+            </ul>
         </section>
 
         <div class="button-container">
-            <a href="white paper_persian.pdf" class="button">دریافت نسخه کامل وایت پیپر (PDF فارسی)</a>
+            <a href="white paper_v2, Persian.pdf" class="button">دریافت وایت پیپر نسخه ۲.۰ (PDF فارسی)</a>
+            <a href="white paper_persian.pdf" class="button secondary">دریافت نسخه اصلی ۱.۰ (PDF فارسی)</a>
         </div>
         
         <footer>
@@ -145,15 +175,11 @@
                 persianContent.style.display = 'none';
                 btnEn.classList.add('active');
                 btnFa.classList.remove('active');
-                document.documentElement.lang = 'en';
-                document.documentElement.dir = 'ltr';
             } else if (lang === 'fa') {
                 englishContent.style.display = 'none';
                 persianContent.style.display = 'block';
                 btnEn.classList.remove('active');
                 btnFa.classList.add('active');
-                document.documentElement.lang = 'fa';
-                document.documentElement.dir = 'rtl';
             }
         }
     </script>
