@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,33 +15,42 @@
             padding: 0 20px;
             background-color: #f9f9f9;
         }
-        header, section, footer {
+
+        header,
+        section,
+        footer {
             background-color: #fff;
             padding: 20px 30px;
             margin-bottom: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
         }
-        h1, h2 {
+
+        h1,
+        h2 {
             color: #1a1a1a;
             border-bottom: 2px solid #eee;
             padding-bottom: 10px;
             margin-top: 0;
         }
+
         .title h1 {
             font-size: 2.2em;
             border-bottom: none;
         }
+
         .subtitle {
             font-size: 1.2em;
             color: #666;
             margin-top: -15px;
             margin-bottom: 20px;
         }
+
         .button-container {
             text-align: center;
             margin: 30px 0;
         }
+
         .button {
             display: inline-block;
             background-color: #007aff;
@@ -53,21 +63,28 @@
             transition: background-color 0.2s;
             margin: 5px;
         }
+
         .button:hover {
             background-color: #0056b3;
         }
+
         .button.secondary {
             background-color: #eef;
             color: #333;
             font-weight: normal;
+            font-size: 0.9em;
+            padding: 8px 18px;
         }
+
         .button.secondary:hover {
             background-color: #dcdfe6;
         }
+
         .lang-switcher {
             text-align: center;
             margin-bottom: 20px;
         }
+
         .lang-switcher button {
             background-color: #eef;
             border: 1px solid #ddd;
@@ -77,21 +94,30 @@
             font-size: 0.9em;
             margin: 0 5px;
         }
+
         .lang-switcher button.active {
             background-color: #007aff;
             color: #fff;
             border-color: #007aff;
         }
+
         #persian-content {
             display: none;
             direction: rtl;
             font-family: "Vazirmatn", "Tahoma", sans-serif;
         }
-        ul { padding-right: 20px; }
-        li { margin-bottom: 10px; }
+
+        .archive-note {
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 20px;
+        }
+
         @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
     </style>
 </head>
+
 <body>
 
     <div class="lang-switcher">
@@ -107,22 +133,22 @@
 
         <section>
             <h2>Executive Summary</h2>
-            <p>This paper proposes The Agora Protocol, a new feature integrated within Telegram to solve the crisis of disconnected voices in authoritarian states. The protocol establishes a secure, anonymous, and multi-stage deliberation process where citizens can discuss and vote on pressing national issues, allowing a national consensus to emerge from a meritocratic filtration system.</p>
-        </section>
-
-        <section>
-            <h2>For Developers & Implementers</h2>
-            <p>The "A Treatise for One Network" protocol is an open framework. To ensure safety and integrity, any legitimate implementation (such as a Telegram Mini-App) must adhere to the following core principles:</p>
-            <ul>
-                <li><strong>100% Open Source:</strong> The entire source code must be publicly available for inspection and audit by the community.</li>
-                <li><strong>Public Security Audit:</strong> The application must undergo and pass a security audit from a trusted, independent third-party firm.</li>
-                <li><strong>Official Endorsement:</strong> To prevent fraudulent clones, any legitimate implementation must be officially recognized and linked to from this website.</li>
-            </ul>
+            <p>Authoritarian regimes thrive by systematically dividing their opposition and silencing the populace,
+                creating a crisis of disconnected voices. This paper proposes The Agora Protocol, a system for secure,
+                anonymous, and scalable national deliberation, designed for integration with a widely-used platform like
+                Telegram.</p>
+            <p>The protocol establishes a multi-stage deliberation process where citizens can find consensus on pressing
+                national issues. It employs Progressive Identity Verification with weighted voting to resist
+                manipulation while maintaining open access. Strategically, the project follows a two-track plan (native
+                integration or a decentralized Mini-App) and is designed to transition into a public utility governed by
+                a community-led Decentralized Autonomous Organization (DAO).</p>
         </section>
 
         <div class="button-container">
-            <a href="white paper_v2.pdf" class="button">Download White Paper v2.0 (English PDF)</a>
-            <a href="white paper.pdf" class="button secondary">Download Original v1.0 (English PDF)</a>
+            <a href="white paper_v3.pdf" class="button">Download White Paper v3.0 (Latest)</a>
+            <div class="archive-note">Archived Versions</div>
+            <a href="white paper_v2.pdf" class="button secondary">Download v2.0</a>
+            <a href="white paper.pdf" class="button secondary">Download v1.0</a>
         </div>
 
         <footer>
@@ -139,24 +165,22 @@
 
         <section>
             <h2>چکیده</h2>
-            <p>این مقاله پروتکل آگورا را پیشنهاد می‌کند، یک ویژگی جدید یکپارچه با تلگرام برای حل بحران صداهای گسسته در دولت‌های خودکامه. این پروتکل یک فرآیند گفت‌وگوی امن، ناشناس و چندمرحله‌ای را ایجاد می‌کند که در آن شهروندان می‌توانند در مورد مسائل ملی بحث و رأی‌گیری کنند و به یک اجماع ملی از طریق یک سیستم پالایش شایسته‌سالار دست یابند.</p>
-        </section>
-        
-        <section>
-            <h2>برای توسعه‌دهندگان و مجریان طرح</h2>
-            <p>پروتکل «رسالۀ یک شبکه» یک چارچوب باز است. برای تضمین ایمنی و یکپارچگی، هر پیاده‌سازی مشروعی (مانند یک مینی-اپ در تلگرام) باید به اصول بنیادین زیر پایبند باشد:</p>
-            <ul>
-                <li><strong>۱۰۰٪ متن‌باز:</strong> تمام سورس کد باید برای بازبینی و حسابرسی توسط جامعه، به صورت عمومی در دسترس باشد.</li>
-                <li><strong>حسابرسی امنیتی عمومی:</strong> اپلیکیشن باید یک حسابرسی امنیتی را توسط یک شرکت شخص ثالث معتبر و مستقل با موفقیت پشت سر بگذارد.</li>
-                <li><strong>تأیید رسمی:</strong> برای جلوگیری از نسخه‌های جعلی، هر پیاده‌سازی مشروعی باید به طور رسمی توسط این وب‌سایت، به عنوان منبع اصلی پروژه، به رسمیت شناخته شود.</li>
-            </ul>
+            <p>رژیم‌های خودکامه با تفرقه‌افکنی سیستماتیک، بحران «صداهای گسسته» را ایجاد می‌کنند. این مقاله پروتکل آگورا
+                را پیشنهاد می‌کند، سیستمی برای گفت‌وگوی ملی امن و ناشناس، که برای ادغام با پلتفرمی پرکاربرد مانند تلگرام
+                طراحی شده است.</p>
+            <p>این پروتکل یک فرآیند گفت‌وگوی چندمرحله‌ای را ایجاد می‌کند که در آن شهروندان می‌توانند به اجماع دست یابند.
+                این سیستم از تأیید هویت پیش‌رونده با رأی‌گیری وزن‌دار برای مقاومت در برابر دستکاری استفاده می‌کند. از
+                نظر استراتژیک، پروژه یک طرح دو مسیره (یکپارچه‌سازی بومی یا یک مینی-اپ غیرمتمرکز) را دنبال می‌کند و برای
+                تبدیل شدن به یک ابزار عمومی که توسط یک سازمان مستقل غیرمتمرکز (DAO) اداره می‌شود، طراحی شده است.</p>
         </section>
 
         <div class="button-container">
-            <a href="white paper_v2, Persian.pdf" class="button">دریافت وایت پیپر نسخه ۲.۰ (PDF فارسی)</a>
-            <a href="white paper_persian.pdf" class="button secondary">دریافت نسخه اصلی ۱.۰ (PDF فارسی)</a>
+            <a href="white paper_v3, Persian.pdf" class="button">دریافت وایت پیپر نسخه ۳.۰ (آخرین نسخه)</a>
+            <div class="archive-note">نسخه‌های بایگانی‌شده</div>
+            <a href="white paper_v2, Persian.pdf" class="button secondary">دریافت نسخه ۲.۰</a>
+            <a href="white paper_persian.pdf" class="button secondary">دریافت نسخه ۱.۰</a>
         </div>
-        
+
         <footer>
             <p>طرحی از <strong>سیمرغ</strong></p>
             <p>برای تماس: <strong>simurgh_beau@proton.me</strong></p>
@@ -185,5 +209,5 @@
     </script>
 
 </body>
-</html>
 
+</html>
